@@ -8,9 +8,6 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 PRODUCT_CHARACTERISTICS := tablet
 
-TARGET_BUILD_VARIANT := eng
-TARGET_BUILD_TYPE := debug
-
 # init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.mt8127.rc:root/init.mt8127.rc \
