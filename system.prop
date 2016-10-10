@@ -48,14 +48,10 @@ ro.sys.usb.charging.only=yes
 persist.sys.isUsbOtgEnabled=1
 
 # no RIL		
- -keyguard.no_require_sim=1		
- -ro.radio.use-ppp=no		
- -ro.config.nocheckin=yes		
- -ro.radio.noril=1		
- -ro.carrier=wifi-only		
- -persist.radio.noril=1
+keyguard.no_require_sim=1		
+ro.radio.use-ppp=no		
+ro.config.nocheckin=yes		
+ro.radio.noril=1		
+ro.carrier=wifi-only		
+persist.radio.noril=1
 
-ro.zygote.preload.enable=0
-
-# Disable dirty region for Mali
-debug.hwui.render_dirty_regions=false
