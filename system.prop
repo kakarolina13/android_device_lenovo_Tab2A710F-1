@@ -2,7 +2,7 @@
 # system.prop for Tab2A710F
 #
 
-persist.sys.timezone=Europe/Paris
+persist.sys.timezone=Asia/Kolkata 
 
 ro.sf.lcd_density=160
 
