@@ -11,6 +11,7 @@ PRODUCT_CHARACTERISTICS := tablet
 # init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.mt8127.rc:root/init.mt8127.rc \
+    $(LOCAL_PATH)/ramdisk/init.mt8127.power.rc:root/init.mt8127.power.rc \
     $(LOCAL_PATH)/ramdisk/init.mt8127usb.rc:root/init.mt8127usb.rc \
     $(LOCAL_PATH)/ramdisk/init.aee.rc:root/init.aee.rc \
     $(LOCAL_PATH)/ramdisk/init.ssd.rc:root/init.ssd.rc \
