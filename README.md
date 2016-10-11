@@ -13,10 +13,10 @@ Camera  | VGA (Front-Facing)
 
 # Build
 
-*Working
+* Working
 
 Everything
 
-*Not Working
+* Not Working
 
 Camera (Can't take Pics)
