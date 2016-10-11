@@ -41,6 +41,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libxlog
 
+# Wifi
+PRODUCT_PACKAGES += \
+    libwpa_client \
+    hostapd \
+    dhcpcd.conf \
+    wpa_supplicant \
+    wpa_supplicant.conf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    $(LOCAL_PATH)/configs/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/configs/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
+	
 # libbt-vendor
 PRODUCT_PACKAGES += \
     libbt-vendor
