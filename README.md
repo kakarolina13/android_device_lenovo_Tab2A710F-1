@@ -1,4 +1,22 @@
-# android_device_lenovo_Tab2A710F
-Android device tree for Lenovo Tab2A7-10F
+Lenovo Tab 2 A7-10F (MediaTek MT8127)
+==============
 
-WORK IN PROGRESS DO NOT USE
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | 1.3GHz Quad-Core MT8127
+GPU     | Mali-450MP
+Memory  | 1GB RAM
+Shipped Android Version | 5.0
+Storage | 32GB
+Display | 7" 1024 x 600 px
+Camera  | VGA (Front-Facing)
+
+# Build
+
+Working
+
+Everything
+
+Not Working
+
+Camera (Can't take Pics)
