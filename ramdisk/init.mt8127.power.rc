@@ -45,5 +45,5 @@ on property:sys.perf.profile=2
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "ondemand"
 
 on property:sys.boot_completed=1
-# Switch to balanced mode after boot for better UX
-    setprop sys.perf.profile 1
+# Switch to Performance mode after boot for better UX
+    setprop sys.perf.profile 2
