@@ -118,10 +118,10 @@ TARGET_LDPRELOAD += libxlog.so
 BOARD_SEPOLICY_DIRS := \
        device/lenovo/Tab2A710F/sepolicy
 
-BOARD_SEPOLICY_UNION := \
-        device.te \
-        netd.te \
-        system.te \
-        file_contexts
+#BOARD_SEPOLICY_UNION := \
+#        device.te \
+#        netd.te \
+#        system.te \
+#        file_contexts
        
        
