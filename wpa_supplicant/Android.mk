@@ -13,16 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(WPA_SUPPLICANT_VERSION),VER_0_8_X)
-$(warning Build wpa_supplicant_lib...)
-ifneq ($(BOARD_WPA_SUPPLICANT_DRIVER),)
-  CONFIG_DRIVER_$(BOARD_WPA_SUPPLICANT_DRIVER) := y
-endif
+    WPA_SUPPL_DIR = external/wpa_supplicant_8
+    WPA_SRC_FILE :=
 
-WPA_SUPPL_DIR = external/wpa_supplicant_8
-WPA_SRC_FILE :=
+ifneq ($(BOARD_WPA_SUPPLICANT_DRIVER),)
+    CONFIG_DRIVER_$(BOARD_WPA_SUPPLICANT_DRIVER) := y
+endif
+ifneq ($(BOARD_HOSTAPD_DRIVER),)
+    CONFIG_DRIVER_$(BOARD_HOSTAPD_DRIVER) := y
+endif
 
 include $(WPA_SUPPL_DIR)/wpa_supplicant/android.config
 
@@ -44,7 +47,9 @@ ifdef CONFIG_DRIVER_WEXT
 endif
 
 # To force sizeof(enum) = 4
+ifeq ($(TARGET_ARCH),arm)
 L_CFLAGS += -mabi=aapcs-linux
+endif
 
 ifdef CONFIG_ANDROID_LOG
 L_CFLAGS += -DCONFIG_ANDROID_LOG
