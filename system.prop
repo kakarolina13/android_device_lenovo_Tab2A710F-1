@@ -32,7 +32,7 @@ mediatek.wlan.ctia=0
 # MTK, mtk03034 20101213}
 
 #
-#wifi.tethering.interface=ap0
+wifi.tethering.interface=ap0
 #
 #wifi.direct.interface=p2p0
 
