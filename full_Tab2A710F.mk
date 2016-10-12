@@ -52,12 +52,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     $(LOCAL_PATH)/configs/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(LOCAL_PATH)/configs/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
-	
-PRODUCT_PROPERTY_OVERRIDES := \
-	ro.debuggable=1 \
-	persist.sys.usb.config=mtp,adb,mass_storage \
-	persist.service.adb.enable=1 \
-	persist.service.debuggable=1 \
+
 	
 # libbt-vendor
 PRODUCT_PACKAGES += \
