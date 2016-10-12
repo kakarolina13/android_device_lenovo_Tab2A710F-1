@@ -38,7 +38,7 @@ wifi.tethering.interface=ap0
 
 
 # Switching Menu of Mass storage and MTP
-ro.sys.usb.storage.type=mtp,adb,mass_storage
+ro.sys.usb.storage.type=mtp,mass_storage
 
 # USB BICR function
 ro.sys.usb.bicr=yes
