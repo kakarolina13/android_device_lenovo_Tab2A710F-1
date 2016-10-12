@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES += \
 	
 PRODUCT_PROPERTY_OVERRIDES := \
 	ro.debuggable=1 \
-	persist.sys.usb.config=mtp,adb \
+	persist.sys.usb.config=mtp,adb,mass_storage \
 	persist.service.adb.enable=1 \
 	persist.service.debuggable=1 \
 	
