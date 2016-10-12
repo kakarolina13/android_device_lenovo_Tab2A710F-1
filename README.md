@@ -20,4 +20,4 @@ Everything
 
 * Not Working
 
-Camera (Can't take Pics)
+Nothing
